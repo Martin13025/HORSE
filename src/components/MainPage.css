@@ -1,0 +1,209 @@
+/* MainPage.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.MainPage {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    top: 20px;
+}
+
+
+.Maps {
+    width: 500px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px; 
+}
+
+
+
+h2 {
+    color: #555;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #777;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+nav {
+    position: relative;
+    margin-top: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+.history {
+    width: 900px;
+}
+
+.Image1 {
+    width: 300px;
+    height: 250px;
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 1200px) {
+    .MainPage {
+        max-width: 1000px;
+    }
+
+    .history {
+        width: 800px;
+    }
+
+    nav ul li {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .MainPage {
+        max-width: 750px;
+    }
+
+    .history {
+        width: 600px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .MainPage {
+        max-width: 600px;
+    }
+
+    .history {
+        width: 500px;
+    }
+
+    .Image1 {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .MainPage {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .history {
+        width: 100%;
+    }
+
+    .Image1 {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+}

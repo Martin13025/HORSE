@@ -1,0 +1,35 @@
+.Uslugi {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.Uslugi h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Uslugi ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.Uslugi li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.Uslugi li::marker {
+    color: #ff6600;
+}
+
+.Uslugi li span {
+    font-weight: bold;
+    color: #333;
+}

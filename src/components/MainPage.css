@@ -125,7 +125,7 @@ nav ul li ul li {
     height: 250px;
 }
 
-/* Медиазапросы для адаптации */
+
 @media (max-width: 1200px) {
     .MainPage {
         max-width: 1000px;
